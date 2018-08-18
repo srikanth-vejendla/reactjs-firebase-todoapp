@@ -41,9 +41,6 @@ class TodoForm extends Component {
 
   addNote = e => {
     if (this.refs.inputNote.value !== "") {
-      var newNote = {
-        todo: this.refs.inputNote.value
-      };
       this.dbRef.add({
         todo: this.refs.inputNote.value
       });
